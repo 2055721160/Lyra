@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class LyraEditorTarget : TargetRules
+public class LyraServerTarget : TargetRules
 {
-	public LyraEditorTarget( TargetInfo Target) : base(Target)
+	public LyraServerTarget(TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Editor;
+		Type = TargetType.Server;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_6;
-		ExtraModuleNames.AddRange(new string[] { "LyraGame", "LyraEditor" });
+		ExtraModuleNames.Add("LyraGame");
 	}
 }
