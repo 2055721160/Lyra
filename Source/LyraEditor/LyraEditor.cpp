@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "Modules/ModuleManager.h"
 #include "LyraEditor.h"
+#include "Modules/ModuleManager.h"
 
 
 /**
